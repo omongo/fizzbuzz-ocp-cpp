@@ -4,7 +4,7 @@
 
 FizzBuzz::FizzBuzz(std::list<Rule *> rules) : rules(rules) {}
 
-FizzBuzz::FizzBuzz::~FizzBuzz() {
+FizzBuzz::~FizzBuzz() {
   for (auto rule : rules)
     delete rule;
 }
