@@ -23,6 +23,11 @@ TEST(FizzBuzz, 5ShouldReturnBuzz)
   CHECK_EQUAL("Buzz", f.say(5));
 }
 
+TEST(FizzBuzz, 15ShouldReturnFizzBuzz)
+{
+  CHECK_EQUAL("FizzBuzz", f.say(15));
+}
+
 int main(int argc, char *argv[])
 {
   return RUN_ALL_TESTS(argc, argv);
