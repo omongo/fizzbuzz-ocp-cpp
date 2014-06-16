@@ -5,7 +5,7 @@
 
 TEST_GROUP(FizzBuzz)
 {
-  FizzBuzz f{std::list<Rule *>{new Fizz}};
+  FizzBuzz f{std::list<Rule *>{new Fizz, new Buzz}};
 };
 
 TEST(FizzBuzz, 1ShouldReturn1)
@@ -16,6 +16,11 @@ TEST(FizzBuzz, 1ShouldReturn1)
 TEST(FizzBuzz, 3ShouldReturnFizz)
 {
   CHECK_EQUAL("Fizz", f.say(3));
+}
+
+TEST(FizzBuzz, 5ShouldReturnBuzz)
+{
+  CHECK_EQUAL("Buzz", f.say(5));
 }
 
 int main(int argc, char *argv[])
