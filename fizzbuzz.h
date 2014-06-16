@@ -1,12 +1,16 @@
 #ifndef FIZZBUZZ_H_
 #define FIZZBUZZ_H_
 
+#include <list>
 #include <string>
+#include "rule.h"
 
-class FizzBuzz
-{
+class FizzBuzz {
+  std::list<Rule *> rules;
 public:
-  std::string say(unsigned int number);
+  FizzBuzz(std::list<Rule *>);
+  ~FizzBuzz();
+  std::string say(unsigned int) const;
 };
 
 #endif
