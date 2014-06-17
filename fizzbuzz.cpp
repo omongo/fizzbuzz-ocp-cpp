@@ -1,6 +1,6 @@
+#include "fizzbuzz.h"
 #include <list>
 #include <string>
-#include "fizzbuzz.h"
 
 FizzBuzz::FizzBuzz() : rules(std::list<Rule *>{new Fizz, new Buzz, new Woof}) {}
 

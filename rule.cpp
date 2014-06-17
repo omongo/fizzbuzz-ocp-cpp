@@ -1,5 +1,5 @@
-#include <string>
 #include "rule.h"
+#include <string>
 
 Rule::Rule(std::string syllable) : syllable(syllable) {}
 
