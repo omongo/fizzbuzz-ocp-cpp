@@ -24,4 +24,10 @@ public:
   bool is_valid(unsigned int) const;
 };
 
+class Woof : public Rule {
+public:
+  Woof();
+  bool is_valid(unsigned int) const;
+};
+
 #endif

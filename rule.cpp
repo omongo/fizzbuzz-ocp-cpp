@@ -20,3 +20,9 @@ Buzz::Buzz() : Rule("Buzz") {}
 bool Buzz::is_valid(unsigned int number) const {
   return number % 5 == 0;
 }
+
+Woof::Woof() : Rule("Woof") {}
+
+bool Woof::is_valid(unsigned int number) const {
+  return number % 7 == 0;
+}

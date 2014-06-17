@@ -8,7 +8,7 @@
 class FizzBuzz {
   std::list<Rule *> rules;
 public:
-  FizzBuzz(std::list<Rule *>);
+  FizzBuzz();
   ~FizzBuzz();
   std::string say(unsigned int) const;
 };

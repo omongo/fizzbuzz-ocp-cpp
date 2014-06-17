@@ -2,7 +2,7 @@
 #include <string>
 #include "fizzbuzz.h"
 
-FizzBuzz::FizzBuzz(std::list<Rule *> rules) : rules(rules) {}
+FizzBuzz::FizzBuzz() : rules(std::list<Rule *>{new Fizz, new Buzz, new Woof}) {}
 
 FizzBuzz::~FizzBuzz() {
   for (auto rule : rules)
